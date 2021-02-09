@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table, table, tr {
+    width: 100%;
+}
+
+th, td{
+    width: 14%;
+    text-align: center;
+}
+
+td {
+    height: 100px; 
+    border: 2px solid black;
+}
+
+.sunday {
+    color: red;
+}
+
+.reminder-add-input {
+    height: 50px;
+    font-size: 25px;
+    width: 31%;
+    margin: 0 1%;
+    margin-top: 100px;
+}
+
+::placeholder {
+    color: black;
+}
