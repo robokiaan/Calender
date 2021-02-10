@@ -27,49 +27,49 @@
                 </tr>
 
                 <tr id="week1">
-                    <td class="days 1">1</td>
-                    <td class="days 2">2</td>
-                    <td class="days 3">3</td>
-                    <td class="days 4">4</td>
-                    <td class="days 5">5</td>
-                    <td class="days 6">6</td>
-                    <td class="days sunday 7">7</td>
+                    <td class="days 1"><button class="btn">1</button></td>
+                    <td class="days 2"><button class="btn">2</button></td>
+                    <td class="days 3"><button class="btn">3</button></td>
+                    <td class="days 4"><button class="btn">4</button></td>
+                    <td class="days 5"><button class="btn">5</button></td>
+                    <td class="days 6"><button class="btn">6</button></td>
+                    <td class="days sunday 7"><button class="btn">7</button></td>
                 </tr>
 
                 <tr id="week2">
-                    <td class="days 8">8</td>
-                    <td class="days 9">9</td>
-                    <td class="days 10">10</td>
-                    <td class="days 11">11</td>
-                    <td class="days 12">12</td>
-                    <td class="days 13">13</td>
-                    <td class="days sunday 14">14</td>
+                    <td class="days 8"><button class="btn">8</button></td>
+                    <td class="days 9"><button class="btn">9</button></td>
+                    <td class="days 10"><button class="btn">10</button></td>
+                    <td class="days 11"><button class="btn">11</button></td>
+                    <td class="days 12"><button class="btn">12</button></td>
+                    <td class="days 13"><button class="btn">13</button></td>
+                    <td class="days sunday 14"><button class="btn">14</button></td>
                 </tr>
 
                 <tr id="week3">
-                    <td class="days 15">15</td>
-                    <td class="days 16">16</td>
-                    <td class="days 17">17</td>
-                    <td class="days 18">18</td>
-                    <td class="days 19">19</td>
-                    <td class="days 20">20</td>
-                    <td class="days sunday 21">21</td>
+                    <td class="days 15"><button class="btn">15</button></td>
+                    <td class="days 16"><button class="btn">16</button></td>
+                    <td class="days 17"><button class="btn">17</button></td>
+                    <td class="days 18"><button class="btn">18</button></td>
+                    <td class="days 19"><button class="btn">19</button></td>
+                    <td class="days 20"><button class="btn">20</button></td>
+                    <td class="days sunday 21"><button class="btn">21</button></td>
                 </tr>
 
                 <tr id="week4">
-                    <td class="days 22">22</td>
-                    <td class="days 23">23</td>
-                    <td class="days 24">24</td>
-                    <td class="days 25">25</td>
-                    <td class="days 26">26</td>
-                    <td class="days 27">27</td>
-                    <td class="days sunday 28">28</td>
+                    <td class="days 22"><button class="btn">22</button></td>
+                    <td class="days 23"><button class="btn">23</button></td>
+                    <td class="days 24"><button class="btn">24</button></td>
+                    <td class="days 25"><button class="btn">25</button></td>
+                    <td class="days 26"><button class="btn">26</button></td>
+                    <td class="days 27"><button class="btn">27</button></td>
+                    <td class="days sunday 28"><button class="btn">28</button></td>
                 </tr>
 
                 <tr id="week5">
-                    <td class="days 29">29</td>
-                    <td class="days 30">30</td>
-                    <td class="days 31">31</td>
+                    <td class="days 29"><button class="btn">29</button></td>
+                    <td class="days 30"><button class="btn">30</button></td>
+                    <td class="days 31"><button class="btn">31</button></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -77,11 +77,14 @@
                 </tr>
             </table>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2" id="rightbar">
             <button type="submit" class="btn btn-success btn-block btn-lg" onclick="add_reminder()">Add
                 Reminder</button>
             <button type="submit" class="btn btn-info btn-block btn-lg" onclick="view_reminders()">View
                 Reminders</button>
+            <div class="reminder-bar">
+                <ul id="reminder-ul"></ul>
+            </div>
         </div>
     </div>
 
