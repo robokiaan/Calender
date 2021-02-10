@@ -40,12 +40,10 @@ td {
 
 #reminder-ul {
     list-style: none;
-    background-color: gray;
-    color: white;
-    height: 56%;
-    width: 14.4%;
+    color: black;
+    width: 21.4%;
     margin-top: 20px;
-    padding: 14px;
+    padding-right: 15px;
     position: fixed;
     text-align: center;
 }

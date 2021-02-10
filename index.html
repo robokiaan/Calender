@@ -9,12 +9,12 @@
     <script src="main.js"></script>
 </head>
 
-<body>
+<body class="container-fluid">
     <h1>Calender</h1>
     <hr>
     <div class="screen" id="home-screen">
         <h3 id="month">January</h3>
-        <div class="col-lg-10">
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
             <table>
                 <tr>
                     <th>Monday</th>
@@ -77,13 +77,13 @@
                 </tr>
             </table>
         </div>
-        <div class="col-lg-2" id="rightbar">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="rightbar">
             <button type="submit" class="btn btn-success btn-block btn-lg" onclick="add_reminder()">Add
                 Reminder</button>
             <button type="submit" class="btn btn-info btn-block btn-lg" onclick="view_reminders()">View
                 Reminders</button>
             <div class="reminder-bar">
-                <ul id="reminder-ul"></ul>
+                <ul id="reminder-ul" class="col-lg-5"></ul>
             </div>
         </div>
     </div>
@@ -93,7 +93,7 @@
             <div class="col-lg-2">
                 <button type="reset" class="btn btn-danger btn-lg btn-block" onclick="back()">Back</button>
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8">  
                 <h3>Add Reminder</h3>
             </div>
             <div class="col-lg-2">

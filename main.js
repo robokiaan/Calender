@@ -178,17 +178,28 @@ function display_reminders(main_date) {
     display()
     jQuery('#reminder-ul').html('')
     jQuery('#reminder-ul').append(`<h4>Reminders for<br>${main_date}</h4><br>`)
+    var previous_numerical_time = '';
 
     for (i = 0; i < reminders.length; i++) {
         var reminder_date = String(reminders[i]).substr(-13 - String(year).length, 6 + String(year).length)
         var reminder_title = String(reminders[i]).substring(0, String(reminders[i]).indexOf(';'))
         var reminder_time = String(reminders[i]).substr(-5, 5)
         reminder_title = String(reminder_title).substr(0, 1).toUpperCase() + String(reminder_title).substring(1).toLowerCase()
-        console.log(reminder_date == main_date)
+        var numerical_time = Number(String(reminder_time).substr(0, 2) + String(reminder_time).substr(3, 2))
         if (reminder_date == main_date) {
-            jQuery('#reminder-ul').append(`
-                <li><p>${String(reminder_title)} at ${reminder_time}</p></li>
-            `)
+            console.log(numerical_time < previous_numerical_time)
+            if (numerical_time < previous_numerical_time) {
+                jQuery('#reminder-ul').html(`
+                    <h4>Reminders for<br>${main_date}</h4><br>
+                    <li><p>${String(reminder_title)} at ${reminder_time}</p></li>
+                    ${jQuery('#reminder-ul li').html()}
+                `)
+            } else {
+                jQuery('#reminder-ul').append(`
+                    <li><p>${String(reminder_title)} at ${reminder_time}</p></li>
+                `)
+            }
+            previous_numerical_time = numerical_time
         }
     }
     if (String(jQuery('#reminder-ul').html()).includes('li') != true) {
