@@ -28,14 +28,25 @@ td {
     margin-top: 100px;
 }
 
+.reminder-view-input {
+    height: 50px;
+    font-size: 25px;
+    width: 31%;
+    margin: 0 1%;
+    margin-top: 10px;
+}
+
 ::placeholder {
     color: black;
 }
 
-.days button {
-    width: 100%;
-    height: 100%;
+.days label {
+    width: 70px;
+    height: 70px;
     background-color: transparent;
+    border-radius: 75px;
+    padding-top: 20%;
+    font-size: 20px;
 }
 
 #reminder-ul {
